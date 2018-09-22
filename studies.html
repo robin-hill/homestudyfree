@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Study Free</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Load Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+
+   <!-- Load my CSS stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<!--
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">    
+-->
+
+   <!-- Load ajax jquery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Logo</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Subjects
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Maths</a>
+                      <a class="dropdown-item" href="#">Physics</a>
+                      <a class="dropdown-item" href="#">Cosmology and Astronomy</a>
+                      <a class="dropdown-item" href="#">Chemistry</a>
+                      <a class="dropdown-item" href="#">Biology</a>
+                      <a class="dropdown-item" href="#">Computer Studies</a>
+                      <a class="dropdown-item" href="#">Geography</a>
+                      <a class="dropdown-item" href="#">Economics</a>
+                      <a class="dropdown-item" href="#">History</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Links</a>
+                  </li>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>                  
+                    <form class="form-inline navbar-right" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                  
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid" style="margin-top:60px">
+
+        <div class="row">
+            <div class="col-md-12">
+                This page lists the <span style="font-size: 28px; font-weight: normal;">Subjects</span> you can study.<br>
+                Each subject is broken down into a list of Subject Areas, Subject Sections and Video Lectures.
+                <ul class="ul-left10">
+                    <li><a href="#ss-1" data-toggle="collapse"><span 
+                    data-toggle="tooltip" title="Click to see Subject Sections">First Subject Area</span></a></li>
+                    <div id="ss-1" class="collapse">
+                        <ul class="ul-left10">
+
+                            <li><a href="#vl-1-1" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">First Subject Section</span></a></li>
+                            <div id="vl-1-1" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+
+                            <li><a href="#vl-1-2" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Second Subject Section</span></a></li>
+                            <div id="vl-1-2" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+
+                            <li><a href="#vl-1-3" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Third Subject Section</span></a></li>
+                            <div id="vl-1-3" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                                    
+                    <li><a href="#ss-2" data-toggle="collapse"><span 
+                    data-toggle="tooltip" title="Click to see Subject Sections">Second Subject Area</span></a></li>
+                    <div id="ss-2" class="collapse">
+                        <ul class="ul-left10">
+
+                            <li><a href="#vl-2-1" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">First Subject Section</span></a></li>
+                            <div id="vl-2-1" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+
+                            <li><a href="#vl-2-2" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Second Subject Section</span></a></li>
+                            <div id="vl-2-2" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+                            
+                            <li><a href="#vl-2-3" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Third Subject Section</span></a></li>
+                            <div id="vl-2-3" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>                                                        
+                        </ul>
+                    </div>
+                    
+                    <li><a href="#ss-3" data-toggle="collapse"><span 
+                    data-toggle="tooltip" title="Click to see Subject Sections">Third Subject Area</span></a></li>
+                    <div id="ss-3" class="collapse">
+                        <ul class="ul-left10">
+
+                            <li><a href="#vl-3-1" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">First Subject Section</span></a></li>
+                            <div id="vl-3-1" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+
+                            <li><a href="#vl-3-2" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Second Subject Section</span></a></li>
+                            <div id="vl-3-2" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>
+                            
+                            <li><a href="#vl-3-3" data-toggle="collapse"><span 
+                            data-toggle="tooltip" title="Click to see Video Lectures">Third Subject Section</span></a></li>
+                            <div id="vl-3-3" class="collapse">
+                                <ul class="ul-left10">
+                                    <li>1 - First Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>2 - Second Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                    <li>3 - Third Video Lecture <a href="#"><span 
+                                    class="badge badge-danger" data-toggle="tooltip" title="Click to play Video Lecture">&#9654;</span></a></li>
+                                </ul>
+                            </div>                                                        
+                        </ul>
+                    </div>                   
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-div" class="container-fluid mt-3">
+        <div class="row">
+
+            <div class="col-md-4">
+            <!-- Subject -->
+            <h3 id="maths">Maths</h3>
+            <ul class="ul-left10">
+                <!-- Subject Area -->
+                <li>Basic Math and Arithmetic</li>
+                <li>Algebra</li>
+                <li>Geometry</li>
+                <li><a href="#precalculus" data-toggle="collapse">Precalculus</a>
+                    <br>
+                </li>
+                <div id="precalculus" class="collapse">
+                  <ul class="ul-left10">
+                    <!-- Subject Section -->
+                    <li>Trigonometry</li>
+                    <li>Conic Sections</li>
+                    <li>Vectors</li>
+                    <li>Matrices</li>
+                    <li>Complex Numbers</li>
+                    <li>Probability and Combinatorics</li>
+                    <li>Series</li>
+                  </ul>
+                </div>
+                <li><a href="#differential-calculus" data-toggle="collapse">Differential Calculus</a>
+                </li>
+                <div id="differential-calculus" class="collapse">
+                  <ul class="ul-left10">
+                    <li>Limits and continuity</li>
+                    <li>Derivatives: definition and basic rules</li>
+                    <li>Derivatives: chain rule and other advanced topics</li>
+                    <li>Applications of derivatives</li>
+                    <li>Analyzing functions</li>
+                    <li>Parametric equations, polar coordinates and vector-valued functions</li>
+                  </ul>
+                </div>
+                <li>
+                    <a href="#integral-calculus" data-toggle="collapse">Integral Calculus</a>
+                </li>               
+                <div id="integral-calculus" class="collapse">
+                  <ul class="ul-left10">
+                    <li>Integrals</li>
+                    <li>Differential equations</li>
+                    <li>Applications of integrals</li>
+                    <li>Applications of derivatives</li>
+                    <li>Parametric equations, polar coordinates and vector-valued functions</li>
+                    <li>Series</li>
+                  </ul>
+                </div>
+                <li>Multivariable Calculus</li>
+                <li>Differential Equations</li>
+                <li>Linear Algebra</li>
+                <li>Probability and Statistics</li>
+            </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Physics</h3>
+                <ul class="ul-left10">
+                    <!-- Subject Areas -->
+                    <li><a href="#ss-si-units" data-toggle="collapse">Mechanics</a><br></li>
+                    <div id="ss-si-units" class="collapse">
+                        <ul class="ul-left10">
+                            <!-- Subject Sections -->
+                            <li><a href="#ch-si-units" data-toggle="collapse">Standard Units in Physics</a></li>
+                            
+                            <!-- Channels -->
+                            <div id="ch-si-units" class="collapse bg-light border shadow">
+                                <ul class="ul-left10">
+                                    <li><button id="mvb-vl-si-units-btn" data-toggle="tooltip" title="click to see list of videos">Michel Van Biezen Lectures</button>
+                                    </li>
+                                    <div id="mvb-vl-si-units" class="bg-light border shadow">
+                                    </div>
+<!-- use script with .addEventListener("click", function() {many functions}); -->
+<script>
+document.getElementById("mvb-vl-si-units-btn").addEventListener("click", function() {
+    closelistbtn('mvb-vl-si-units'); 
+    listVideo('mvb-vl-si-units','1','Meters, Kms, Seconds ','https://www.youtube.com/embed/38yIqiCNJpg');
+    listVideo('mvb-vl-si-units','2','Length in MKS, Imperial, and Maritime ','https://www.youtube.com/embed/8Dvr5ugKLy8');
+    listVideo('mvb-vl-si-units','3','Maritime and Imperial Unit Equivalence 1 ','https://www.youtube.com/embed/flWOvyq6dMU');
+    listVideo('mvb-vl-si-units','4','Maritime and Imperial Unit Equivalence 2 ','https://www.youtube.com/embed/NfBg9W37vWU');
+    listVideo('mvb-vl-si-units','5','Standard Units in Mechanics ','https://www.youtube.com/embed/Wp1JGhvdgzM');
+    listVideo('mvb-vl-si-units','6','Standard Units: Rotational Motion ','https://www.youtube.com/embed/FNs_-Z1gHxU');
+    listVideo('mvb-vl-si-units','7','Stress and Strain ','https://www.youtube.com/embed/x_JVf4B7XKM');
+    listVideo('mvb-vl-si-units','8','Units and Fluid ','https://www.youtube.com/embed/YB0PJ-bpZSc');
+    listVideo('mvb-vl-si-units','9','The Wave Equation ','https://www.youtube.com/embed/sUK_njey6nw');
+    listVideo('mvb-vl-si-units','10','Sound ','https://www.youtube.com/embed/MDR0JHUpWvw');
+    listVideo('mvb-vl-si-units','11','Heat ','https://www.youtube.com/embed/6yu2dF8CA-4');
+    listVideo('mvb-vl-si-units','12','Specific Heat and Molar Heat Capacity ','https://www.youtube.com/embed/vl7So5Xs3Wg');
+    listVideo('mvb-vl-si-units','13','Conduction, Thermal Conductivity, R-Rating ','https://www.youtube.com/embed/36of1B3hgb0');
+    listVideo('mvb-vl-si-units','14','The Ideal Gas Law ','https://www.youtube.com/embed/vnCuokjvdBE');
+    listVideo('mvb-vl-si-units','15','Unit of Charge & Coulomb&#39;s Law ','https://www.youtube.com/embed/SgluTx1z_ZQ');
+    listVideo('mvb-vl-si-units','16','The Electric Field ','https://www.youtube.com/embed/KN_DcmNC9JY');
+    listVideo('mvb-vl-si-units','17','Electric P.E. & Electrical Potential ','https://www.youtube.com/embed/p2HY0hJE_Dg');
+    listVideo('mvb-vl-si-units','18','Electric Flux ','https://www.youtube.com/embed/VnRxtayPLYo');
+    listVideo('mvb-vl-si-units','19','Capacitance ','https://www.youtube.com/embed/_SUZsIepN68');
+    listVideo('mvb-vl-si-units','20','Current, Resistivity, & Ohm&#39;s Law ','https://www.youtube.com/embed/KdsYByNdfq4');
+    listVideo('mvb-vl-si-units','21','Magnetic Field ','https://www.youtube.com/embed/QBONzpYlL-g');
+    listVideo('mvb-vl-si-units','22','Magnetic Flux ','https://www.youtube.com/embed/jDYtE8EvLFE');
+    listVideo('mvb-vl-si-units','23','Magnetic Field 2 ','https://www.youtube.com/embed/YL7gjEr3mQc');
+    listVideo('mvb-vl-si-units','24','Mutual & Self Inductance ','https://www.youtube.com/embed/zboCbG7Aw90');
+    listVideo('mvb-vl-si-units','25','Energy Stored in a Magnetic Field ','https://www.youtube.com/embed/lNhvmNSEpzo');
+    listVideo('mvb-vl-si-units','26','Energy in a L-C Circuit ','https://www.youtube.com/embed/tdkZ_OsNFNU');
+    listVideo('mvb-vl-si-units','27','Reactance ','https://www.youtube.com/embed/NGSgjj5TKJo');
+    listVideo('mvb-vl-si-units','28','Power Dissipated in a Resistor ','https://www.youtube.com/embed/ZUWesrBbT1E');
+    listVideo('mvb-vl-si-units','29','Speed of Light ','https://www.youtube.com/embed/kAb9c8D21C0');
+    listVideo('mvb-vl-si-units','30','E & M Waves ','https://www.youtube.com/embed/8MMNFvn6pD0');
+    listVideo('mvb-vl-si-units','31','The Poynting Vector ','https://www.youtube.com/embed/Xc_YixEgYY8');
+    listVideo('mvb-vl-si-units','32','Momentum Density of E&M Waves ','https://www.youtube.com/embed/BdMU3z2l1KI');
+    listVideo('mvb-vl-si-units','33','Flow Rate of E&M Momentum ','https://www.youtube.com/embed/gIIERVw-ZUc');
+    listVideo('mvb-vl-si-units','34','Energy in Special Relativity ','https://www.youtube.com/embed/d-smfv9Us4o');
+    listVideo('mvb-vl-si-units','35','Energy & Momentum in a Photon ','https://www.youtube.com/embed/F3my9MXQ120');
+    listVideo('mvb-vl-si-units','36','The de Broglie Wavelength ','https://www.youtube.com/embed/Cmr4tGx3ZUo');
+    listVideo('mvb-vl-si-units','37','Planck Radiation (Black Body Radiation) ','https://www.youtube.com/embed/ijNZgh2nNmg');
+    listVideo('mvb-vl-si-units','38','Stefan Boltzmann Law ','https://www.youtube.com/embed/NZ1xBzUahi8');
+    listVideo('mvb-vl-si-units','39','What is an Electron Volt (eV)? ','https://www.youtube.com/embed/_NhX0DO_uRI');
+    listVideo('mvb-vl-si-units','40','What is the Decay Rate? ','https://www.youtube.com/embed/SGic4l1jJ9M');
+    listVideo('mvb-vl-si-units','41','What is the Atomic Mass Unit? ','https://www.youtube.com/embed/-y4pAtqHdX0');
+    endlistVideo('mvb-vl-si-units');
+    });
+</script>
+                               
+                                </ul>
+                            
+                                <ul class="ul-left10">    
+                                    <li>
+<!-- use HTML onclick="many-functions" 
+<button id="wl-vl-si-units-btn" onclick="closelistbtn('wl-vl-si-units'); listVideo('wl-vl-si-units','8.01x - Lect 1 - Powers of 10, Units, Dimensions, Uncertainties, Scaling Arguments ','https://www.youtube.com/embed/GtOGurrUPmQ'); endlistVideo('wl-vl-si-units');" 
+data-toggle="tooltip" title="Click to see list of videos">
+MIT Lectures by Walter Lewin<br>
+They will make you ♥ Physics</button>
+-->
+                                        <button id="wl-vl-si-units-btn"data-toggle="tooltip" title="Click to see list of videos">MIT Lectures by Walter Lewin.<br>
+                                    They will make you ♥ Physics.</button>
+                                    </li>
+                                    <div id="wl-vl-si-units" class="bg-light border shadow">
+                                    </div>
+<!-- use script with .addEventListener("click", function() {many functions}); -->
+<script>
+document.getElementById("wl-vl-si-units-btn").addEventListener("click", function() {
+    closelistbtn('wl-vl-si-units');
+    listVideo('wl-vl-si-units','1','8.01x - Lect 1 - Powers of 10, Units, Dimensions, Uncertainties, Scaling Arguments ','https://www.youtube.com/embed/GtOGurrUPmQ');
+    endlistVideo('wl-vl-si-units');
+    });
+</script>
+
+<!-- use script with .onclick = function() {many functions};                             
+<script>
+document.getElementById("wl-vl-si-units-btn").onclick = function() { closelistbtn('wl-vl-si-units'); 
+listVideo('wl-vl-si-units','8.01x - Lect 1 - Powers of 10, Units, Dimensions, Uncertainties, Scaling Arguments ','https://www.youtube.com/embed/GtOGurrUPmQ'); 
+endlistVideo('wl-vl-si-units');};
+</script>
+-->
+                                </ul>
+                            </div>
+                        <li>Vectors</li>
+                        <li>Motion In One Dimension</li>
+                        <li>Motion In 1 Dimension: Graphic Solutions</li>
+                        <li>Motion In Two Dimensions</li>
+                        <li>Rotational Motion - Graphical Solution</li>
+                        <li>Newton'S Laws</li>
+                        <li>Friction</li>
+                        <li>Newton'S Laws Applications</li>
+                        <li>Newton'S Laws And Rotation</li>
+                        <li>Relative Motion</li>
+                        <li>Work, Energy, And Power</li>
+                        <li>Conservation Of Energy</li>
+                        <li>Impulse And Momentum</li>
+                        <li>Stress And Strain</li>
+                        <li>Rotational Motion</li>
+                        <li>Moment Of Inertia</li>
+                        <li>Moment Of Inertia Applications</li>
+                        <li>Center Of Mass</li>
+                        <li>Angular Momentum</li>
+                        <li>Simple Harmonic Motion 2 - With Multiple Springs</li>
+                        <li>Torsion</li>
+                        <li>Torque</li>
+                        <li>Torque Fundamentals</li>
+                        <li>Simple Harmonic Motion</li>
+                        <li>Simple Harmonic Motion With Damping</li>
+                        <li>Weight And Tension</li>
+                        <li>Gravity</li>
+                        <li>Mechanical Waves</li>
+                        <li>Sound And Sound Waves</li>
+                        <li>Fluid Statics</li>
+                        <li>Rigid Body Rotation</li>
+                        <li>The Gyroscope</li>
+                        <li>Gravity With Mass Distribution</li>
+                        <li>Additional Motion Examples</li>
+                        <li>Fluid Statics: What Is Buoyance Force?</li>
+                        <li>Newton'S Laws Examples</li>
+                        <li>Free Body Diagrams</li>
+                        <li>Work, Energy, And Power Examples</li>
+                        <li>Rotational Kinetic Energy</li>
+                        <li>Momentum</li>
+                        </ul>
+                    </div>
+                               
+                    <li>Waves</li>
+                    <li>Sound</li>
+                    <li>Fluids</li>
+                    <li>Thermodynamics</li>
+                    <li>Electricity and Magnetism</li>
+                    <li>Optics</li>
+                    <li>Special Relativity</li>
+                    <li>General Relativity</li>
+                    <li>Atomic Physics</li>
+                    <li>Nuclear Physics</li>
+                    <li>Particle Physics</li>
+                    <li>Quantum Physics</li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Cosmology and Astronomy</h3>
+                <ul>
+                    <li>History of Astronomy</li>
+                    <li>The Big Bang</li>
+                    <li>The Night Sky</li>
+                    <li>The Solar System</li>
+                    <li>The Moon</li>
+                    <li>Galaxies</li>
+                    <li>Telescopes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Chemistry</h3>
+                <ul>
+                    <li>Atoms</li>
+                    <li>The Periodic Table</li>
+                    <li>Molecules</li>
+                    <li>Ions</li>
+                    <li>Molecular Structure</li>
+                    <li>Liquids</li>
+                    <li>Solids</li>
+                    <li>Crystals</li>
+                    <li>Solutions</li>
+                    <li>Organic Chemistry</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Biology</h3>
+                <ul>
+                    <li>Human Body</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Computer Studies</h3>
+                <ul>
+                    <li>History of Computers</li>
+                    <li>Computer Science</li>
+                    <li>Computer Programming</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Geography</h3>
+                <ul>
+                    <li>Physical Geography</li>
+                    <li>Human Geography</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Economics</h3>
+                <ul>
+                    <li>Micro Economics</li>
+                    <li>Macro Economics</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>History</h3>
+                <ul>
+                    <li>Ancient World History</li>
+                    <li>Middle Ages</li>
+                    <li>Modern History</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Script to search main-div -->
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#main-div *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<!-- Script to initialize Tooltip -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+<script>
+
+function videoList_wl_si_units(divID){
+    var vldivID = document.getElementById(divID);
+    closelistbtn(divID);
+    listVideo(divID,'8.01x - Lect 1 - Powers of 10, Units, Dimensions, Uncertainties, Scaling Arguments ','https://www.youtube.com/embed/GtOGurrUPmQ');
+    endlistVideo(divID);
+}    
+
+function closelistbtn(divID){
+    var closedivID = document.getElementById(divID)
+    closedivID.innerHTML = '<ul class="ul-left5"><button type="button" class="btn btn-danger float-r" onclick="delistVideo(&#39;'+divID+'&#39;)">Close</button><br>';
+}
+
+function listVideo(divID,videoNum,videoTitle,videoURL){
+    var newdivID = document.getElementById(divID);
+    if (videoTitle !== "OFF") {
+    newdivID.innerHTML +='<li>'+videoNum+'. '+videoTitle+'<a data-toggle="modal" href="#'+divID+videoNum+'-modal1"><span class="badge badge-danger">&#9654;</span></a><!-- The Modal --><div class="modal fade" id="'+divID+videoNum+'-modal1"><div class="modal-dialog modal-lg"><div class="modal-content"><!-- Modal Header --><div class="modal-header"><h4 class="modal-title">'+videoTitle+'</h4><button type="button" class="close" data-dismiss="modal">&times;</button></div><!-- Modal body --><div class="modal-body"><!-- 16:9 aspect ratio --><div class="embed-responsive embed-responsive-16by9"><iframe width="640" height="480" src="'+videoURL+'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></div><!-- Modal footer --><div class="modal-footer"><button type="button" class="btn btn-danger" data-dismiss="modal">Close</button></div></div></div></div></li>';
+    }
+    else {
+    divID.innerHTML = '';        
+    }
+}    
+
+function endlistVideo(divID){
+    var enddivID = document.getElementById(divID)
+    enddivID.innerHTML +='</ul>';    
+}
+
+function delistVideo(divID){
+    var olddivID = document.getElementById(divID)
+    olddivID.innerHTML = '';
+}
+
+</script>
+
+<!-- Load Bootstrap javascript dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
